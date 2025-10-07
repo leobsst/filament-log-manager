@@ -16,7 +16,7 @@ class JumpToStartAction extends Action
     {
         parent::setUp();
 
-        $this->icon('heroicon-o-arrow-uturn-up')->color('gray');
+        $this->icon('heroicon-o-arrow-uturn-up')->color('info');
 
         $this->tooltip(__('filament-log-manager::translations.actions.jumpToStart.label'));
 

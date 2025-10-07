@@ -15,11 +15,12 @@ export default ({
             readOnly: true,
             maxLines,
             minLines,
-            fontSize
+            fontSize,
         });
 
         window.addEventListener('logContentUpdated', e => {
-            this.editor.session.setValue(e.detail.content)
+            this.editor.session.setValue(e.detail.content);
+            this.jumpToEnd();
         })
     },
 

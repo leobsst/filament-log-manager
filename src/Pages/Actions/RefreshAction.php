@@ -16,7 +16,7 @@ class RefreshAction extends Action
     {
         parent::setUp();
 
-        $this->icon('heroicon-o-arrow-path-rounded-square')->color('gray');
+        $this->icon('heroicon-o-arrow-path-rounded-square')->color('info');
 
         $this->tooltip(__('filament-log-manager::translations.actions.refresh.label'));
 
