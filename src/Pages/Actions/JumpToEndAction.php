@@ -16,7 +16,7 @@ class JumpToEndAction extends Action
     {
         parent::setUp();
 
-        $this->icon('heroicon-o-arrow-uturn-down')->color('gray');
+        $this->icon('heroicon-o-arrow-uturn-down')->color('info');
 
         $this->tooltip(__('filament-log-manager::translations.actions.jumpToEnd.label'));
 

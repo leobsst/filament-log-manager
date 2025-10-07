@@ -7,7 +7,7 @@ return [
     /**
      * Maximum amount of lines that editor will render.
      */
-    'max_lines' => 100,
+    'max_lines' => 45,
 
     /**
      * Minimum amount of lines that editor will render.
