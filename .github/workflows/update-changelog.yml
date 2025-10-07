@@ -52,7 +52,7 @@ jobs:
         if: steps.git-check.outputs.changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v6
         with:
-          branch: main
+          branch: ${{ github.event.release.target_commitish }}
           commit_message: "Update CHANGELOG"
           file_pattern: CHANGELOG.md
         env:
