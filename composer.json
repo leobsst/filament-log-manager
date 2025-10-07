@@ -44,7 +44,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Leobsst\\FilamentLogManager\\Tests\\": "tests/"
+            "Tests\\": "tests/"
         }
     },
     "scripts": {

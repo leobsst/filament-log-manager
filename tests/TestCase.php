@@ -1,6 +1,6 @@
 <?php
 
-namespace Leobsst\FilamentLogManager\Tests;
+namespace Tests;
 
 use Leobsst\FilamentLogManager\FilamentLogManagerServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
