@@ -66,10 +66,7 @@
         "laravel": {
             "providers": [
                 "Leobsst\\FilamentLogManager\\FilamentLogManagerServiceProvider"
-            ],
-            "aliases": {
-                "FilamentLogManager": "Leobsst\\FilamentLogManager\\Facades\\FilamentLogManager"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
