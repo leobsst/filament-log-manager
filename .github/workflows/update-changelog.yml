@@ -19,7 +19,7 @@ jobs:
       - name: Checkout code (full history)
         uses: actions/checkout@v5
         with:
-          ref: main
+          ref: ${{ github.event.release.target_commitish }}
           fetch-depth: 0
 
       - name: Show release context
@@ -35,6 +35,7 @@ jobs:
         with:
           latest-version: ${{ github.event.release.name }}
           release-notes: ${{ github.event.release.body }}
+          compare-url-target-revision: ${{ github.event.release.target_commitish }}
 
       - name: Check for changelog changes
         id: git-check
@@ -52,7 +53,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v6
         with:
           branch: main
-          commit_message: "ci(changelog): update CHANGELOG for ${{ github.event.release.tag_name || github.event.release.name }}"
+          commit_message: "Update CHANGELOG"
           file_pattern: CHANGELOG.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
