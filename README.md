@@ -220,6 +220,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## Credits
 
 - [LEOBSST](https://github.com/leobsst)
+- [B.L.A.M. PRODUCTION](https://linksly.fr/BLAM-PRODUCTION)
 - [All Contributors](../../contributors)
 
 ## License

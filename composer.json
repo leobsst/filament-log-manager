@@ -17,6 +17,12 @@
             "name": "LEOBSST",
             "email": "contact@leobsst.fr",
             "role": "Developer"
+        },
+        {
+            "name": "B.L.A.M. PRODUCTION",
+            "email": "contact@blam-prod.fr",
+            "homepage": "https://blam-prod.fr",
+            "role": "Provider"
         }
     ],
     "require": {
