@@ -3,6 +3,11 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/leobsst/filament-log-manager.svg?style=flat-square)](https://packagist.org/packages/leobsst/filament-log-manager)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/leobsst/filament-log-manager/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/leobsst/filament-log-manager/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/leobsst/filament-log-manager.svg?style=flat-square)](https://packagist.org/packages/leobsst/filament-log-manager)
+[![License](https://img.shields.io/badge/license-MIT-green.svg
+)](https://opensource.org/licenses/MIT)
+[![Laravel](https://img.shields.io/badge/Laravel-12.0-FF2D20?logo=laravel)](https://laravel.com)
+[![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?logo=php)](https://www.php.net)
+
 
 Read Laravel logs from the Filament v4 admin panel.
 
