@@ -5,7 +5,8 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/leobsst/filament-log-manager.svg?style=flat-square)](https://packagist.org/packages/leobsst/filament-log-manager)
 [![License](https://img.shields.io/badge/license-MIT-green.svg
 )](https://opensource.org/licenses/MIT)
-[![Laravel](https://img.shields.io/badge/Laravel-12.0-FF2D20?logo=laravel)](https://laravel.com)
+[![Laravel](https://img.shields.io/badge/Laravel-V12.0%20|%20V13.0-FF2D20?logo=laravel)](https://laravel.com)
+[![Filament](https://img.shields.io/badge/Filament-V4%20|%20V5-FDAE4B?logo=filament)](https://filamentphp.com/)
 [![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?logo=php)](https://www.php.net)
 
 
