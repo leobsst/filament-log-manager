@@ -34,9 +34,9 @@ Read Laravel logs from the Filament v4 admin panel.
 ### Requirements
 
 - PHP 8.2 or higher
-- Laravel 11.x or 12.x
-- Filament 4.x
-- Pest 3.x for testing (dev dependency)
+- Laravel 11.x or 12.x or 13.x
+- Filament 4.x or 5.x
+- Pest 3.x or 4.x for testing (dev dependency)
 
 You can install the package via composer:
 
