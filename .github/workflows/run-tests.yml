@@ -28,16 +28,21 @@ jobs:
         include:
           - laravel: 13.*
             testbench: 11.*
+            pest: "^5.0"
             pest-plugin-laravel: "^5.0"
           - laravel: 12.*
             testbench: 10.*
+            pest: "^3.0"
             pest-plugin-laravel: "^3.0"
           - laravel: 11.*
             testbench: 9.*
+            pest: "^3.0"
             pest-plugin-laravel: "^3.0"
         exclude:
           - laravel: 13.*
             php: 8.2
+          - laravel: 13.*
+            php: 8.3
           - laravel: 11.*
             filament: "^5.0"
 
@@ -61,7 +66,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" "filament/filament:${{ matrix.filament }}" "pestphp/pest-plugin-laravel:${{ matrix.pest-plugin-laravel }}" --no-interaction --no-update
+          composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" "filament/filament:${{ matrix.filament }}" "pestphp/pest:${{ matrix.pest }}" "pestphp/pest-plugin-laravel:${{ matrix.pest-plugin-laravel }}" --no-interaction --no-update
           composer update --${{ matrix.stability }} --prefer-dist --no-interaction
 
       - name: Execute tests
