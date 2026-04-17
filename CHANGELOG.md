@@ -2,6 +2,13 @@
 
 All notable changes to `filament-log-manager` will be documented in this file.
 
+## v1.0.3 - 2026-04-17
+
+### Bug Fixes
+
+- **Correct plugin ID** — plugin was incorrectly registered as `laravel-cms-core` instead of `filament-log-manager`, which caused `FilamentLogManager::get()` to fail when resolving the plugin from the panel.
+- **Filament 5 API compatibility** — replaced deprecated `filament(app(...)->getId())` call with `filament()->getPlugin(...)` and removed unused `FilamentManager` import.
+
 ## v1.0.2 - 2026-04-16
 
 ### What's Changed
