@@ -5,7 +5,6 @@ namespace Leobsst\FilamentLogManager;
 use BackedEnum;
 use Closure;
 use Filament\Contracts\Plugin;
-use Filament\FilamentManager;
 use Filament\Panel;
 use Filament\Support\Concerns\EvaluatesClosures;
 use Filament\Support\Icons\Heroicon;
@@ -56,7 +55,7 @@ class FilamentLogManager implements Plugin
      */
     public function getId(): string
     {
-        return 'laravel-cms-core';
+        return 'filament-log-manager';
     }
 
     /**
@@ -90,9 +89,12 @@ class FilamentLogManager implements Plugin
         return app(static::class);
     }
 
-    public static function get(): FilamentManager | static
+    public static function get(): static
     {
-        return filament(app(static::class)->getId());
+        /** @var static $plugin */
+        $plugin = filament()->getPlugin(app(static::class)->getId());
+
+        return $plugin;
     }
 
     public function authorize(bool | Closure $callback = true): static
