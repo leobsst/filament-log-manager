@@ -1,6 +1,7 @@
 <?php
 
 use Leobsst\FilamentLogManager\Pages\Logs;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 beforeEach(function () {
     config()->set('filament-log-manager.limit', 50);
@@ -57,7 +58,7 @@ class LogsTestDouble extends Logs
         }
     }
 
-    public function download(): ?\Symfony\Component\HttpFoundation\BinaryFileResponse
+    public function download(): ?BinaryFileResponse
     {
         if (! $this->logFile || ! $this->fileResidesInLogDirs($this->logFile)) {
             return null;
