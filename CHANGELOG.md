@@ -2,6 +2,10 @@
 
 All notable changes to `filament-log-manager` will be documented in this file.
 
+## v1.0.4 - 2026-11-25
+
+**Full Changelog**: https://github.com/leobsst/filament-log-manager/compare/v1.0.3...v1.0.4
+
 ## v1.0.3 - 2026-04-17
 
 ### Bug Fixes
